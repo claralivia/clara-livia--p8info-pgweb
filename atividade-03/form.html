@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+    </head>
+
+    <body>
+        <style>
+            body{
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            form{
+                padding: 20px;
+            }
+            input{
+                margin: 20px 0 20px 0;
+                border-radius: 5px;
+            }
+            #text{
+                height: 50px;
+            }
+            img{
+                border-radius: 10%;
+            }
+            button{
+                border-radius: 5px;
+            }
+        </style>
+
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" size="32" id="name" name="name"><br>
+
+
+            <label for="pet">Escolha um PET:</label><br>
+
+            <input type="radio" name="favpet" value="cachorro">
+            <label for="dog"><img src="images/dog.jpg" alt="dog"></label>
+
+            <input type="radio" name="favpet" value="gato">
+            <label for="cat"><img src="images/cat.jpg" alt="cat"></label>
+
+            <input type="radio" name="favpet" value="pássaro">
+            <label for="bird"><img src="images/bird.jpg" alt="pássaro"></label>
+
+            <input type="radio" name="favpet" value="peixe">
+            <label for="fish"><img src="images/fish.jpg" alt="peixe"></label><br>
+
+            <label>Escreva aqui o porquê de você gostar desse PET:</label><br>
+            <input type="text" id="text" size="40"><br>
+
+            <button onclick="data()">Enviar</button>
+        </form>
+
+        <script>
+            function data(){
+                var name = document.getElementById("name").value;
+                var pet = document.getElementsByName("favpet");
+                var text = document.getElementById("text").value;
+
+                for (var i = 0; i < pet.length; i++) {
+                    if (pet[i].checked) {
+                        var mypet = pet[i].value;
+                    }
+                }
+
+                alert("Seu nome é '" + name + "' e você escolheu '" + mypet + "' com a justificativa de '" + text + "'");
+            }
+        </script>
+
+    </body>
+</html>
