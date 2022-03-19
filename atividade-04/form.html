@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="Style.css">
+    <style>
+      img{
+        width: 150px;
+        height: 150px;   
+      }
+    </style>
+  <title>FORM Fav Pets</title>
+<body>
+  <h2>Qual é o seu tipo de Pet favorito?</h2>
+  <form action="formCompleted.html">
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="radio" id="dog" name="pet" value="Dog">
+    <label for="dog"><img src="https://i.pinimg.com/600x315/fd/29/96/fd299634a2989fec82e88a98b1563533.jpg" alt="Dog"></label><br>
+    <input type="radio" id="cat" name="pet" value="cat">
+    <label for="cat"><img src="https://www.clipartmax.com/png/full/408-4081504_bongo-cat-lowered-paws-bongo-cat-lowered-paws.png" alt="cat"></label><br>
+    <input type="radio" id="mice" name="pet" value="mice">
+    <label for="mice"><img src="https://www.askideas.com/media/48/Mouse-Say-Come-At-Me-Ese-Very-Funny-Meme-Image.jpg" alt="mice"></label><br>
+    
+    <h3>Comentario:</h3>
+    <textarea name="comentarioPet" rows="4" cols="40">
+    </textarea><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <p>Clique em "Submit" para enviar suas respostas.</p>
+</body>
+</html>
