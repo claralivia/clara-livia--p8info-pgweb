@@ -1,0 +1,80 @@
+body{
+    font-family: open sans;
+    text-align: center;
+    margin: 0;
+}
+#container{
+    margin: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    height: 80%;
+}
+header{
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    height: 10%;
+}
+footer{
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    height: 5%;
+
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #2F4F4F;
+}
+#regiao{
+    height: 280px;
+    border-radius: 10px;
+    border: 1px solid #2F4F4F;
+}
+.position{
+    display: inline-block;
+}
+#button{
+    text-align: center;
+}
+button{
+    font-family: open sans;
+    border: 1px solid #a7a7a7;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    border: 2px solid #268C3F;
+    color: #000;
+}
+select{
+    border-radius: 7px;
+    border-color: #a7a7a7;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    padding-left: 10PX;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    margin: 20px 0;
+}
+#selecionar{
+    text-align: left;
+    margin: 30px;
+    padding: 10px;
+}
+#municipios{
+    margin: 20px;
+}
+#principal{
+    text-align: center;
+    margin: 40px 0;
+    height: auto;
+    height: 78%;
+}
+.total{
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+}
