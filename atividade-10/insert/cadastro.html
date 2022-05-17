@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        function verificar(){
+            var chave = document.querySelector('#chave').value;
+            var valor = document.querySelector('#valor').value;
+
+            if (chave === ''){
+                alert("Campo CHAVE em branco.");
+            }
+            else if(valor === ''){
+                alert("Campo VALOR em branco.");
+            }
+            else{
+                document.getElementById("formulario").setAttribute("action","../insert/insert.php");
+                document.getElementById("formulario").setAttribute("method","post");
+            }
+        }
+
+
+    </script>
+    <div class="form_cd">
+        <h3>Cadastro de Usuário</h3>
+        <form id="formulario" action="" method="">
+            <div><input type="text" name="chave" id="chave" placeholder="Chave"></div>
+            <div><input type="text" name="valor" id="valor" placeholder="Valor"></div>
+            <div><input type="submit" name="acao" value="Cadastrar" onclick="verificar()"></div>  
+            <div><input type="hidden" name="form" value="f_form"></div>
+        </form>
+    </div>
+</body>
+</html>

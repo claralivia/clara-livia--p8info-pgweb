@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ateliê de Bolos</title>
+</head>
+<body>
+
+    <script>
+        function analisar(){
+            var tipoBolo = document.getElementsByName("tipoBolo");
+            var bolo = 0;
+            var i;
+
+            for (i = 0; i < tipoBolo.length; i++) {
+                if (tipoBolo[i].checked) {
+                    bolo++;
+                }
+            }
+
+            if (bolo != 1){
+                alert("Escolha um tipo de bolo.");
+            }
+            else if(bolo == 1){   
+                document.getElementById("formulario").setAttribute("action","formulario.php");
+            }
+        }
+    </script>
+
+    <div class="form_cd">
+        <h3>Eu quero:</h3><br>
+        <form id="formulario" method="GET">
+            <div>
+                <div id="opcoes">
+                    <div class="1-5">
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoUm">
+                            <img class="image" src="assets/1-5/tipoUm.jpg" alt="tipoUm">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDois">
+                            <img class="image" src="assets/1-5/tipoDois.jpg" alt="tipoDois">
+                        </div>
+                        <div class="position">
+                            <input type="radio" ame="tipoBolo" value="tipoTres">
+                            <img class="image" src="assets/1-5/tipoTres.jpg" alt="tipoTres">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoQuatro">
+                            <img class="image" src="assets/1-5/tipoQuatro.jpg" alt="tipoQuatro">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoCinco">
+                            <img class="image" src="assets/1-5/tipoCinco.jpg" alt="tipoCinco">
+                        </div>
+                    </div>
+
+                    <div class="6-10">
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoSeis">
+                            <img class="image" src="assets/6-10/tipoSeis.jpg" alt="tipoSeis">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoSete">
+                            <img class="image" src="assets/6-10/tipoSete.jpg" alt="tipoSete">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoOito">
+                            <img class="image" src="assets/6-10/tipoOito.jpg" alt="tipoOito">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoNove">
+                            <img class="image" src="assets/6-10/tipoNove.jpg" alt="tipoNove">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDez">
+                            <img class="image" src="assets/6-10/tipoDez.jpg" alt="tipoDez">
+                        </div>
+                    </div>
+
+                    <div class="11-15">
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoOnze">
+                            <img class="image" src="assets/11-15/tipoOnze.jpg" alt="tipoOnze">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDoze">
+                            <img class="image" src="assets/11-15/tipoDoze.jpg" alt="tipoDoze">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoTreze">
+                            <img class="image" src="assets/11-15/tipoTreze.jpg" alt="tipoTreze">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoQuatorze">
+                            <img class="image" src="assets/11-15/tipoQuatorze.jpg" alt="tipoQuatorze">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoQuinze">
+                            <img class="image" src="assets/11-15/tipoQuinze.jpg" alt="tipoQuinze">
+                        </div>
+                    </div>
+
+                    <div class="16-20">
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDezesseis">
+                            <img class="image" src="assets/16-20/tipoDezesseis.jpg" alt="tipoDezesseis">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDezessete">
+                            <img class="image" src="assets/16-20/tipoDezessete.jpg" alt="tipoDezessete">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDezoito">
+                            <img class="image" src="assets/16-20/tipoDezoito.jpg" alt="tipoDezoito">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoDezenove">
+                            <img class="image" src="assets/16-20/tipoDezenove.jpg" alt="tipoDezenove">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoVinte">
+                            <img class="image" src="assets/16-20/tipoVinte.jpg" alt="tipoVinte">
+                        </div>
+                    </div>
+
+                    <div class="21-23">
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoVinteUm">
+                            <img class="image" src="assets/21-23/tipoVinteUm.jpg" alt="tipoVinteUm">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoVinteDois">
+                            <img class="image" src="assets/21-23/tipoVinteDois.jpg" alt="tipoVinteDois">
+                        </div>
+                        <div class="position">
+                            <input type="radio" name="tipoBolo" value="tipoVinteTres">
+                            <img class="image" src="assets/21-23/tipoVinteTres.jpg" alt="tipoVinteTres">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="button">
+                    <button class="tipoBoloEnviar" onclick="analisar()">Enviar</button>
+                    <a class="voltar" href="../index.html">Voltar</a><br><br>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

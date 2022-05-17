@@ -1,0 +1,84 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+img{
+    width: 140px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+table{
+    overflow-x: auto;
+    width: 100%;
+      text-align: center;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+th {
+  height: 40px;
+}
+.voltar{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 15px;
+}
+.voltarDois{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: #8B4513;
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 15px;
+}
+h3{
+    padding: 20px 0;
+    background-color: #8B4513;
+    color: white;
+}
+.tipoBoloEnviar{
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    border: 0;
+    height: 36px;
+    font-size: 15px; 
+}
+.position{
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px; 
+}
+#button{
+    margin-top: 20px;
+    background-color: #8B4513; 
+    padding: 15px;
+}
+form input[type="text"]{
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+form input[type="email"]{
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+#ajuste{
+    margin: 20px;
+    padding: 10px; 
+}
