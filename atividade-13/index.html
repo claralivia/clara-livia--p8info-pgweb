@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Atividade 13</title>
+</head>
+<body>
+
+<!-- 1. Tem que ser POST para fazer o upLoad de Arquivos 
+     2. também o form deve ter o ecctype como no exemplo
+ -->
+<form id="container" action="file_upload_01.php" method="post" enctype="multipart/form-data">
+  <h3>Selecione um arquivo para upload:</h3>
+  <input type="file" name="fileToUpload" id="fileToUpload"> <br><br>
+  <input type="submit" value="Enviar" name="OK">
+</form>
+
+</body>
+</html>
